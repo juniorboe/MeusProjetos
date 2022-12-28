@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+
+
+body{
+    background-image: linear-gradient(to left, transparent 50%, rgb(255, 255, 255)),url(img_index.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 0 0 0 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    height: 100vh;
+}
+
+.container{
+    margin: 5em 2em 0 45vw;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.contend{
+    margin-top: 2em;
+}
+
+.list-1{
+    padding: 0;
+}
+
+.item-list{
+    margin-left: 2em;
+}
+
+.contend-2{
+    margin-top: 2em;
+}
+
+.login{
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+.login .text-box {
+    font-family: 'Open Sans', sans-serif;
+    border-style: groove;
+    border-radius: 8px;
+    border-color: lavender;
+    height: 30px;
+    width: 350px;
+}
+
+.submit {
+    margin: 0px 40px;
+}
+
+footer{
+    margin: 2em auto 7em auto;
+    padding-bottom: 3em;
+    background-image: linear-gradient(to right, black, rgb(222, 226, 248));
+    color: white;
+}
+
+.footer-contend{
+    text-align: center;
+    margin-top: 2em;
+    padding-top: 3em;
+}
+.submit{
+    cursor: pointer;
+    margin-left: 0px;
+    width: fit-content;
+}
+
+input[type=submit]{
+    text-align: center;
+    background-color: lavender;
+    border-radius: 5px;
+    padding: 8px 20px;
+}

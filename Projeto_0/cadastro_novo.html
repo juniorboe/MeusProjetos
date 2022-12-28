@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro_novo</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+
+    html, body{
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        top: 0;
+        left: 0;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1em;
+    }
+
+    header{
+        background-image: linear-gradient(to right, black, rgb(222, 226, 248));
+        color: white;
+        font-variant: small-caps;
+    }
+
+    header .contend{
+        width: fit-content;
+        margin: 0 auto 0 3em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    footer{
+        margin: 0 auto 7em auto;
+        padding-bottom: 3em;
+        background-image: linear-gradient(to right, black, rgb(222, 226, 248));
+        color: white;
+    }
+
+    .contend-footer{
+        text-align: center;
+        padding-top: 3em;
+        margin-top: 0;
+    }
+
+    .container{
+        margin: 0 0 0 0;
+        padding-top: 2em;
+        padding-bottom: 4em;
+        padding-left: 3em;
+        font-size: 1em;
+        background-image: linear-gradient(to right, white, transparent 90%), url(img_index.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-weight: 550;
+    }
+
+    .box-contend{
+        font-family: 'Open Sans', sans-serif;
+        border-radius: 5px;
+    }
+
+    input[type=submit]{
+        cursor: pointer;
+        margin-top: 2em;
+        margin-left: 2em;
+        text-align: center;
+        background-color: lavender;
+        border-radius: 5px;
+        padding: 8px 20px;
+}
+
+.requisitos-senha{
+    margin-bottom: 2em;
+}
+
+.list-contend{
+    margin: 0 0 0.5em 4em;
+    line-height: 0.7em;
+}
+
+
+
+</style>
+<body>
+    <header>
+        <h1 class="contend">Continue seu cadastro</h1>
+    </header>
+    <section class="container">
+        <!--
+            dados da empresa:
+            nome fantasia; razão social; cnpj
+            endereço:
+            cep; rua; numero; complemento; bairro; cidade; uf
+            contato:
+            telefone1; telefone2
+        -->
+        <div class="dados-da-empresa">
+            <h3>Dados da empresa</h3>
+            <label for="nome-fantasia">Nome fantasia: </label>
+            <input type="text" class="box-contend" name="nome-fantasia" id="nome-fantasia" maxlength="35">
+            <label for="razao-social">Razão social: </label>
+            <input type="text" class="box-contend" name="razao-social" id="razao-social" maxlength="35">
+            <label for="cnpj">CNPJ: </label>
+            <input type="text" class="box-contend" name="cnpj" id="cnpj" maxlength="14" placeholder="xx.xxx.xxx/xxxx-xx">
+        </div>
+        <div class="endereco">
+            <h3>Endereço</h3>
+            <label for="cep">CEP: </label>
+            <input type="text" class="box-contend" name="cep" id="cep" maxlength="8" placeholder="xxxxx-xxx">
+            <label for="rua">Rua: </label>
+            <input type="text" class="box-contend" name="rua" id="rua" maxlength="35">
+            <label for="numero">Número: </label>
+            <input type="text" class="box-contend" name="numero" id="numero" maxlength="6">
+            <br><br>
+            <label for="complemento">Complemento: </label>
+            <input type="text" class="box-contend" name="complemento" id="complemento" maxlength="20">
+            <label for="bairro">Bairro: </label>
+            <input type="text" class="box-contend" name="bairro" id="bairro" maxlength="20">
+            <br><br>
+            <label for="cidade">Cidade: </label>
+            <input type="text" class="box-contend" name="cidade" id="cidade" maxlength="35">
+            <label for="uf">UF: </label>
+            <select class="box-contend" name="uf" id="uf">
+                <option value="acre">AC</option>
+                <option value="alagoas">AL</option>
+                <option value="amapa">AP</option>
+                <option value="amazonas">AM</option>
+                <option value="bahia">BA</option>
+                <option value="ceara">CE</option>
+                <option value="distrito-federal">DF</option>
+                <option value="espirito-santo">ES</option>
+                <option value="goias">GO</option>
+                <option value="maranhao">MA</option>
+                <option value="mato-grosso">MT</option>
+                <option value="mato-grosso-do-sul">MS</option>
+                <option value="minas-gerais">MG</option>
+                <option value="para">PA</option>
+                <option value="paraiba">PB</option>
+                <option value="parana">PR</option>
+                <option value="pernambuco">PE</option>
+                <option value="piaui">PI</option>
+                <option value="rio-de-janeiro">RJ</option>
+                <option value="rio-grande-do-norte">RN</option>
+                <option value="rio-grande-do-sul">RS</option>
+                <option value="rondonia">RO</option>
+                <option value="roraima">RR</option>
+                <option value="santa-catarina">SC</option>
+                <option value="sao-paulo">SP</option>
+                <option value="sergipe">SE</option>
+                <option value="tocantins">TO</option>
+            </select>
+        </div>
+        <div class="contato">
+            <h3>Contato</h3>
+            <label for="contato">Telefone 1: </label>
+            <input class="box-contend" type="tel" name="tel1" id="tel1" pattern="[0-9]{2}-[0-9]{9}" maxlength="11" placeholder="(xx)x-xxxx.xxxx">
+            <label for="contato">Telefone 2: </label>
+            <input class="box-contend" type="tel" name="tel2" id="tel2" pattern="[0-9]{2}-[0-9]{9}" maxlength="11" placeholder="(xx)x-xxxx.xxxx">
+        </div>
+        <div class="senha">
+            <h3>Senha</h3>
+            <div class="requisitos-senha">
+                <ul>Crie uma senha de 6 a 8 dígitos, contendo pelo menos:</ul>
+                    <li class="list-contend">Uma letra maiúscula;</li>
+                    <li class="list-contend">Uma letra minúscula;</li>
+                    <li class="list-contend">Um caractere especial;</li>
+                    <li class="list-contend">Um número.</li>
+            </div>
+            <label for="senha">Senha: </label>
+            <input class="box-contend" type="text" name="senha" id="senha" placeholder="Crie uma senha" maxlength="8">
+            <label for="senha">Confirmação de senha: </label>
+            <input class="box-contend" type="text" name="confirmacao-senha" id="confirmacao-senha" placeholder="Confirme sua senha" maxlength="8">
+        </div>
+        <div class="submit">
+            <input type="submit" value="Cadastrar">
+        </div>
+    </section>
+    <footer>
+        <p class="contend-footer">Direitos autorais reservados a marca.</p>
+    </footer>
+</body>
+</html>

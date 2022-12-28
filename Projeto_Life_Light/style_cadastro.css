@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    top: 0;
+    left: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+header{
+    background-image: linear-gradient(to right, black, rgb(222, 226, 248));
+    color: white;
+    font-variant: small-caps;
+}
+
+header .contend{
+    width: fit-content;
+    margin: 0 auto 0 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+footer{
+    margin: 0 auto 7em auto;
+    padding-bottom: 3em;
+    background-image: linear-gradient(to right, black, rgb(222, 226, 248));
+    color: white;
+}
+
+.contend-footer{
+    text-align: center;
+    padding-top: 3em;
+    margin-top: 0;
+}
+
+.container{
+    margin: 0 0 0 0;
+    padding-top: 2em;
+    padding-bottom: 4em;
+    padding-left: 3em;
+    font-size: 1em;
+    background-image: linear-gradient(to right, white, transparent 90%), url(img_index.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 550;
+}
+
+.box-contend{
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5px;
+}
+
+input[type=submit]{
+    cursor: pointer;
+    margin-top: 2em;
+    margin-left: 2em;
+    text-align: center;
+    background-color: lavender;
+    border-radius: 5px;
+    padding: 8px 20px;
+}
+
+.requisitos-senha{
+margin-bottom: 2em;
+}
+
+.list-contend{
+margin: 0 0 0.5em 4em;
+line-height: 0.7em;
+}

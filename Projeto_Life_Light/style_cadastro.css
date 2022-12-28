@@ -18,9 +18,8 @@ header{
 
 header .contend{
     width: fit-content;
-    margin: 0 auto 0 3em;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    margin: 0 auto 0 0;
+    padding: 1em 0 1em 50%;
 }
 
 footer{
@@ -37,10 +36,11 @@ footer{
 }
 
 .container{
+    display: block;
     margin: 0 0 0 0;
     padding-top: 2em;
     padding-bottom: 4em;
-    padding-left: 3em;
+    padding-left: 45%;
     font-size: 1em;
     background-image: linear-gradient(to right, white, transparent 90%), url(img_index.jpg);
     background-repeat: no-repeat;

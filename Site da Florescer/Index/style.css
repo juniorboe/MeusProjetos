@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     list-style: none;
+    font-size: 1em;
 }
 
 .logo img {
@@ -75,6 +78,7 @@ header .icone-carrinho {
     border-radius: 4px;
     background-color: rgb(255, 232, 235);
     font-weight: 400;
+    font-size: 15px;
 }
 
 .search button:hover {
@@ -128,6 +132,33 @@ header .icone-carrinho {
 
 .text-homepage h3 {
     font-style: italic;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.cards h1 {
+    text-align: center;
+    align-items: center;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cards p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item-card {
+    padding: 50px;
+    box-shadow: 10px 5px 20px rgb(255, 151, 169);
+    margin-bottom: 40px;
 }
 
 

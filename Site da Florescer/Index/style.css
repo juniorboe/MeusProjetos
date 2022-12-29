@@ -137,11 +137,12 @@ header .icone-carrinho {
 }
 
 .cards {
+    margin: 20px;
     display: grid;
     grid-template-columns: auto auto auto auto;
     padding: 20px;
-    align-items: center;
     text-align: center;
+    align-items: center;
 }
 
 .cards h1 {
@@ -157,14 +158,13 @@ header .icone-carrinho {
 
 .item-card {
     padding: 50px;
-    box-shadow: 10px 10px 20px rgb(255, 151, 169);
+    box-shadow: 5px 20px 20px rgb(255, 151, 169);
     border-radius: 20px;
     margin-bottom: 40px;
     width: 200px;
 }
 
 .cards img {
-    
 }
 
 

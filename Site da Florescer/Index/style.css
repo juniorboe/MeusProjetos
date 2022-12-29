@@ -138,7 +138,7 @@ header .icone-carrinho {
 
 .cards {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     padding: 20px;
     align-items: center;
     text-align: center;
@@ -157,8 +157,14 @@ header .icone-carrinho {
 
 .item-card {
     padding: 50px;
-    box-shadow: 10px 5px 20px rgb(255, 151, 169);
+    box-shadow: 10px 10px 20px rgb(255, 151, 169);
+    border-radius: 20px;
     margin-bottom: 40px;
+    width: 200px;
+}
+
+.cards img {
+    
 }
 
 
